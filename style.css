@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+-webkit-font-smoothing: antialiased;
+display: flex;
+height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+
+input, button, textarea, select {
+font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+#root, #__next {
+isolation: isolate;
+}
+
+.left-side {
+    flex-basis: 40vw;
+    background-image: url(/images/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-width: 450px;
+   
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color:#7d3cff;
+}
+
+.right-side > * {
+    flex: 1;
+}
+
+.help {
+    flex: 1;
+    margin-top: 10%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.help p:last-child {
+    margin: 2vh 0;
+
+}
+
+.form {
+    flex-basis: 50%;
+}
+
+.inputs {
+    display: flex;
+}
+
+.container {
+    padding: 1vh 3vw;
+   
+}
+
+.colored{
+    background-color: lightgray;
+    height: 30vh;
+}
+
