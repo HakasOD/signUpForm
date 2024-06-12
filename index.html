@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="left-side">
-        
+        <div class="logo">
+            <div class="hi">
+                <img src="images/house-stark-6000432_1280.png" alt="Wolf logo">
+                <h1>Wolfs Winter</h1>
+            </div>
+        </div>
     </div>
     <div class="right-side">
         <div class="container help">
@@ -16,49 +21,52 @@
                 This is not a real online service! You know you need something
                 like this in your life to help you realise your deepst dreams.
             </p>
-            <p>Sign up now to get started.</p>
-            <p>You know you want to.</p>
+            <p>Sign up <span class="italics">now</span> to get started.</p>
+            <p>You <span class="italics">know</span> you want to.</p>
         </div>  
 
         <section class="form">
             <form action="..xx" method="post">
                 <div class="container colored">
-                    Let's do this!
+                    <p>Let's do this!</p>
                     <div class="inputs">
                         <ul>
                             <li>
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="firstName">
+                                <p><label for="first-name"><span>FIRST NAME*</span></label></p>
+                                <input type="text" id="first-name" name="firstName" required>
                             </li>
                             <li>
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <p><label for="email">EMAIL</label></p>
+                                <input type="email" id="email" name="email" required>
                             </li>
                             <li>
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <p><label for="password">PASSWORD</label></p>
+                                <input type="password" id="password" name="password"
+                                minlength="8"> 
                             </li>
                         </ul>
+             
                         <ul>
                             <li>
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="lastName">
+                                <p><label for="last-name"><span>LAST NAME*</span></label></p>
+                                <input type="text" id="last-name" name="lastName" required>
                             </li>
                             <li>
-                                <label for="phone-number">PHONE NUMBER</label>
+                                <p><label for="phone-number">PHONE NUMBER</label></p>
                                 <input type="tel" id="phone-number" name="phoneNumber">
                             </li>
                             <li>
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password" name="confirmPassword">
+                                <p><label for="confirm-password">CONFIRM PASSWORD</label></p>
+                                <input type="password" id="confirm-password" name="confirmPassword"
+                                minlength="8">
                             </li>
                         </ul>
                     
                     </div>
                 </div> 
                 <div class="container">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <span>Log in</span></p>
+                    <button type="submit" class="button">Create Account</button>
+                    <p>Already have an account? <a href="" class="login">Log in</a></p>
                 </div>
             </form>
         </section>

@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'alegreya_sans_scregular';
+    src: url('fonts/alegreyasanssc-regular-webfont.woff2') format('woff2'),
+         url('fonts/alegreyasanssc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'amerikaregular';
+    src: url('fonts/amerika_-webfont.woff2') format('woff2'),
+         url('fonts/amerika_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'amerika_alternatesregular';
+    src: url('fonts/amerikaa-webfont.woff2') format('woff2'),
+         url('fonts/amerikaa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -5,12 +38,17 @@
 * {
 margin: 0;
 padding: 0;
+font-family:"alegreya_sans_scregular" ;
 }
 
 body {
 -webkit-font-smoothing: antialiased;
 display: flex;
 height: 100vh;
+}
+
+h1 {
+    font-family: 'amerikaregular';
 }
 
 ul {
@@ -34,31 +72,39 @@ overflow-wrap: break-word;
 isolation: isolate;
 }
 
+.container {
+    padding: 1vh 3vw;
+}
+
 .left-side {
     flex-basis: 40vw;
     background-image: url(/images/backgroundImage.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     min-width: 450px;
-   
+    
 }
+
+.italics {
+    font-style: italic;
+    margin-right: 5px;
+}
+
 
 .right-side {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color:#7d3cff;
+    background-color:bisque;
 }
 
 .right-side > * {
     flex: 1;
 }
 
-.help {
-    flex: 1;
-    margin-top: 10%;
-    font-size: x-large;
-    font-weight: bold;
+.right-side .help p {
+    max-width: 800px;
+    font-size: larger;
 }
 
 .help p:last-child {
@@ -74,13 +120,111 @@ isolation: isolate;
     display: flex;
 }
 
-.container {
-    padding: 1vh 3vw;
-   
+
+
+.help {
+    flex: 1;
+    margin-top: 15vh;
+    font-size: x-large;
+    font-weight: bold;
+
 }
 
 .colored{
-    background-color: lightgray;
+    background-color:rgb(195, 197, 91);
     height: 30vh;
+    font-size: xx-large;
+    box-shadow: 0px 5px 5px rgb(127, 128, 78);
+    padding-right: 10vw;
+}
+.inputs li:first-child {
+    margin-top: 1vh;
 }
 
+.inputs li {
+    margin-top: 3vh;
+    font-size: medium;
+}
+
+.inputs ul {
+    flex: 1;
+}
+
+.inputs input {
+    width: 75%;
+    border-radius: 5px;
+    border: 1px #E5E7EB solid;
+    height: 3vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:5px;
+}
+
+.inputs input:focus{
+    border: 2px  solid #596D48;
+    box-shadow: 1px 1px 5px rgb(167, 156, 156);
+    outline: none;
+}
+
+.inputs input[type=password]:invalid{
+    border: 2px solid red;
+}
+
+.button {
+    padding: 1.3vh 1.8vw;
+    margin: 2vh 0;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border: 1px #596D48 solid;
+    box-shadow:  1px 1px 5px #2e302c;
+
+}
+
+.button:hover {
+    background-color:  #384130;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.button:active {
+    background-color: #384130;
+    transform: translateY(1px);
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    margin-top: 15vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgb(255, 255, 255, .5);
+    font-size: 1.8rem;
+    gap: 5px;
+    margin-inline: auto;
+    margin-left: -4vw;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+
+.hi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: calc(100% + 50px);
+
+    
+}
