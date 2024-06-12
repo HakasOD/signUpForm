@@ -78,7 +78,7 @@ isolation: isolate;
 
 .left-side {
     flex-basis: 40vw;
-    background-image: url("../images/backgroundImage.jpg");
+    background-image: url(./images/backgroundImage.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     min-width: 450px;
